@@ -28,7 +28,7 @@ body{
   overflow-x:hidden;
 }
 
-h1,h2,h3{margin:0;font-family:"Big Shoulders Display","IBM Plex Sans",sans-serif;font-weight:900;line-height:.9}
+h1,h2,h3{margin:0;font-family:"Oswald","IBM Plex Sans",sans-serif;font-weight:700;line-height:.9}
 p{margin:0}
 a{color:inherit}
 img,svg{display:block;max-width:100%}
@@ -52,7 +52,7 @@ li{list-style:none}
 }
 .mark{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-right:auto}
 .mark__ico{width:30px;height:30px;fill:var(--accent);flex:none}
-.mark__txt{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:1.75rem;letter-spacing:.06em}
+.mark__txt{font-family:"Oswald",sans-serif;font-weight:700;font-size:1.75rem;letter-spacing:.06em}
 
 .nav{display:flex;align-items:center;gap:1.75rem;font-size:.9375rem}
 .nav a{text-decoration:none;color:#C8CFD6;padding:.25rem 0;border-bottom:1px solid transparent}
@@ -121,7 +121,7 @@ li{list-style:none}
   padding-top:1.5rem;
   border-top:1px solid rgba(237,239,240,.16);
 }
-.hours dt{font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:1.375rem;color:var(--tile)}
+.hours dt{font-family:"Oswald",sans-serif;font-weight:700;font-size:1.375rem;color:var(--tile)}
 .hours dd{color:var(--steel);font-size:.9375rem}
 
 /* ——— заголовки секций ——— */
@@ -148,11 +148,11 @@ li{list-style:none}
   transition:background-color .18s;
 }
 .tile:hover{background:#fff}
-.tile__n{font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:1.5rem;line-height:1.05}
+.tile__n{font-family:"Oswald",sans-serif;font-weight:700;font-size:1.5rem;line-height:1.05}
 .tile__d{color:var(--steel);font-size:.9375rem;margin-top:.5rem}
 .tile__p{
   margin-top:auto;padding-top:1rem;
-  font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:2.125rem;
+  font-family:"Oswald",sans-serif;font-weight:700;font-size:2.125rem;
   color:var(--ink);
 }
 
@@ -189,7 +189,7 @@ li{list-style:none}
 .facts li:last-child{border-bottom:1px solid rgba(237,239,240,.16)}
 .facts b{
   display:block;
-  font-family:"Big Shoulders Display",sans-serif;font-weight:700;font-size:1.375rem;
+  font-family:"Oswald",sans-serif;font-weight:700;font-size:1.375rem;
   color:var(--tile);margin-bottom:.3rem;
 }
 
@@ -208,7 +208,7 @@ li{list-style:none}
 /* ——— подвал ——— */
 .foot{background:var(--ink-deep);color:#9AA7B4;padding:clamp(2.5rem,6vw,4rem) 0}
 .foot__in{display:grid;gap:.6rem}
-.foot__mark{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:2rem;color:var(--tile);letter-spacing:.06em}
+.foot__mark{font-family:"Oswald",sans-serif;font-weight:700;font-size:2rem;color:var(--tile);letter-spacing:.06em}
 .foot a{text-decoration:none;border-bottom:1px solid var(--accent)}
 .foot__fine{font-size:.8125rem;color:var(--steel);margin-top:.5rem}
 
