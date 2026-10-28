@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ГРАЧ — барбершоп на Ленина, 14</title>
+<meta name="description" content="Барбершоп ГРАЧ: мужские стрижки, борода, бритьё опасной бритвой. Ленина, 14. Запись в Telegram или по телефону.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#price">К прайсу</a>
+
+<header class="bar">
+  <div class="bar__in">
+    <a class="mark" href="#top">
+      <svg class="mark__ico" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M4 22c6-1 9-4 11-9l3 3 4-6 2 4 4-2-5 10c-2 4-6 6-11 6H4z"/>
+      </svg>
+      <span class="mark__txt">ГРАЧ</span>
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+      <em class="vh">Меню</em>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#price">Прайс</a>
+      <a href="#masters">Мастера</a>
+      <a href="#how">Как это у нас</a>
+      <a href="#where">Адрес</a>
+      <a class="nav__tel" href="tel:+73432000014">+7 343 200-00-14</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__wall" aria-hidden="true"></div>
+    <div class="hero__in">
+      <p class="hero__over">Барбершоп на Ленина, 14</p>
+      <h1 class="hero__name" id="heroName">ГРАЧ</h1>
+      <p class="hero__lead">Стрижём мужчин с 2016 года. Без очередей: приходите ко времени,
+        которое выбрали сами, — и через час уходите с нормальной головой.</p>
+
+      <div class="hero__act">
+        <a class="btn btn--accent" href="https://t.me/grach_barber">Записаться в Telegram</a>
+        <a class="btn btn--ghost" href="tel:+73432000014">Позвонить</a>
+      </div>
+
+      <dl class="hours">
+        <div><dt>Пн–Пт</dt><dd>10:00 — 22:00</dd></div>
+        <div><dt>Сб–Вс</dt><dd>11:00 — 21:00</dd></div>
+        <div><dt>Ленина, 14</dt><dd>вход со двора</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="price" id="price">
+    <div class="wrap">
+      <h2 class="h2">Прайс</h2>
+      <p class="h2sub">Цена окончательная. Мытьё головы, укладка и кофе входят в стрижку.</p>
+
+      <ul class="tiles">
+        <li class="tile"><span class="tile__n">Мужская стрижка</span><span class="tile__d">машинка и ножницы, мытьё, укладка</span><span class="tile__p">1200&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Стрижка машинкой</span><span class="tile__d">одна длина или с переходом</span><span class="tile__p">800&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Стрижка и борода</span><span class="tile__d">полный разбор головы и лица, самое ходовое</span><span class="tile__p">1800&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Оформление бороды</span><span class="tile__d">контур, длина, горячее полотенце</span><span class="tile__p">700&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Бритьё опасной бритвой</span><span class="tile__d">пена, два прохода, уход после</span><span class="tile__p">900&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Камуфляж седины</span><span class="tile__d">держится 3–4 недели</span><span class="tile__p">900&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Детская стрижка</span><span class="tile__d">до 12 лет, без спешки и уговоров</span><span class="tile__p">800&nbsp;₽</span></li>
+        <li class="tile"><span class="tile__n">Отец и сын</span><span class="tile__d">две стрижки подряд, одна запись</span><span class="tile__p">1900&nbsp;₽</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="masters" id="masters">
+    <div class="wrap">
+      <h2 class="h2">Мастера</h2>
+      <p class="h2sub">Можно записаться к конкретному — или к тому, кто свободен раньше.</p>
+
+      <div class="crew">
+        <article class="man">
+          <div class="man__ph" role="img" aria-label="Фотография мастера Артёма">
+            <span class="man__note">фото мастера</span>
+          </div>
+          <h3 class="man__nm">Артём</h3>
+          <p class="man__rl">Основатель, 9 лет за креслом</p>
+          <p class="man__tx">Любит короткие классические формы и чёткий контур. Если не знаете,
+            чего хотите, — идите к нему, он решит за вас и будет прав.</p>
+        </article>
+
+        <article class="man">
+          <div class="man__ph" role="img" aria-label="Фотография мастера Дениса">
+            <span class="man__note">фото мастера</span>
+          </div>
+          <h3 class="man__nm">Денис</h3>
+          <p class="man__rl">Барбер, 5 лет</p>
+          <p class="man__tx">Работает с бородой и опасной бритвой. Единственный в городе,
+            кто делает горячее бритьё по полной программе, а не за десять минут.</p>
+        </article>
+
+        <article class="man">
+          <div class="man__ph" role="img" aria-label="Фотография мастера Романа">
+            <span class="man__note">фото мастера</span>
+          </div>
+          <h3 class="man__nm">Роман</h3>
+          <p class="man__rl">Барбер, 3 года</p>
+          <p class="man__tx">Делает современные стрижки с текстурой и всё, что приносят
+            скриншотами. Берёт детей — с ними у него получается лучше всех.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap how__in">
+      <div>
+        <h2 class="h2 h2--light">Как это у нас</h2>
+        <p class="how__lead">Четыре вещи, из-за которых к нам возвращаются.</p>
+      </div>
+      <ul class="facts">
+        <li><b>Ко времени</b>Записались на 18:30 — садитесь в 18:30. Если мастер опоздает, стрижка за полцены.</li>
+        <li><b>Час на человека</b>Мы не ставим две записи в один слот, поэтому никто никого не торопит.</li>
+        <li><b>Инструмент под каждого</b>Ножницы и машинки проходят дезинфекцию между клиентами, лезвия одноразовые.</li>
+        <li><b>Не нравится — переделаем</b>Три дня после стрижки можно прийти и поправить бесплатно.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="where" id="where">
+    <div class="wrap where__in">
+      <div class="where__txt">
+        <h2 class="h2">Как добраться</h2>
+        <p>Ленина, 14 — серое здание на углу, вход со двора, вторая дверь с синей табличкой.
+          Со стороны улицы входа нет, это сбивает всех в первый раз.</p>
+        <dl class="where__list">
+          <div><dt>Телефон</dt><dd><a href="tel:+73432000014">+7 343 200-00-14</a></dd></div>
+          <div><dt>Telegram</dt><dd><a href="https://t.me/grach_barber">@grach_barber</a></dd></div>
+          <div><dt>Часы</dt><dd>Пн–Пт 10:00–22:00, Сб–Вс 11:00–21:00</dd></div>
+          <div><dt>Парковка</dt><dd>во дворе, бесплатно, 6 мест</dd></div>
+        </dl>
+        <a class="btn btn--accent" href="https://t.me/grach_barber">Записаться в Telegram</a>
+      </div>
+
+      <div class="where__map">
+        <svg viewBox="0 0 400 320" role="img" aria-label="Схема: барбершоп во дворе дома 14 на улице Ленина">
+          <rect width="400" height="320" fill="#E3EDF3"/>
+          <rect x="0" y="118" width="400" height="54" fill="#C6D8E3"/>
+          <line x1="0" y1="145" x2="400" y2="145" stroke="#fff" stroke-width="2" stroke-dasharray="18 14"/>
+          <rect x="0" y="0" width="400" height="14" fill="#D5E3EB"/>
+          <rect x="54" y="186" width="150" height="84" fill="#A8BFCE"/>
+          <rect x="232" y="186" width="120" height="58" fill="#BFD2DE"/>
+          <rect x="232" y="30" width="96" height="70" fill="#BFD2DE"/>
+          <rect x="70" y="40" width="110" height="60" fill="#BFD2DE"/>
+          <circle cx="214" cy="228" r="13" fill="#222A63"/>
+          <circle cx="214" cy="228" r="5" fill="#fff"/>
+          <text x="214" y="262" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="#222A63" text-anchor="middle">вход со двора</text>
+          <text x="12" y="112" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#6E779E">ул. Ленина</text>
+          <text x="66" y="300" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#6E779E">дом 14</text>
+        </svg>
+        <p class="where__cap">Схема двора. Точкой отмечена наша дверь.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="foot__mark">ГРАЧ</span>
+    <p>Барбершоп, Ленина, 14 · <a href="tel:+73432000014">+7 343 200-00-14</a> · <a href="https://t.me/grach_barber">@grach_barber</a></p>
+    <p class="foot__fine">Вымышленный барбершоп. Сайт сделан как работа в портфолио.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

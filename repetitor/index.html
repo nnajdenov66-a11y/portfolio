@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анна Корнилова — репетитор по математике, ЕГЭ и ОГЭ</title>
+<meta name="description" content="Репетитор по математике: подготовка к ЕГЭ и ОГЭ, 9–11 класс. Онлайн и очно в Екатеринбурге. Первое занятие бесплатно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#price">К ценам</a>
+
+<header class="bar">
+  <div class="bar__in">
+    <a class="me" href="#top">
+      <span class="me__nm">Анна Корнилова</span>
+      <span class="me__rl">математика · ЕГЭ и ОГЭ</span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span><em class="vh">Меню</em>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#how">Как занимаемся</a>
+      <a href="#price">Цены</a>
+      <a href="#results">Результаты</a>
+      <a href="#about">Обо мне</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__txt">
+        <h1>Готовлю к ЕГЭ и ОГЭ по математике — с&nbsp;9&nbsp;класса до результата</h1>
+        <p class="hero__lead">Беру учеников с любого уровня, включая тех, кому «математика
+          просто не даётся». За два года средний прирост моих выпускников — 31 балл.</p>
+        <div class="hero__act">
+          <a class="btn btn--solid" href="https://t.me/anna_matematika">Записаться на пробное</a>
+          <a class="btn btn--line" href="#price">Сколько стоит</a>
+        </div>
+        <p class="hero__fine">Первое занятие бесплатное: смотрим, где пробелы, и решаем,
+          сработаемся ли.</p>
+      </div>
+
+      <figure class="task">
+        <figcaption class="task__cap">Задача из первой части профиля</figcaption>
+        <p class="task__q">Найдите корень уравнения<br><b>3<sup>x−5</sup> = 81</b></p>
+
+        <button class="task__btn" id="solveBtn" aria-expanded="false" aria-controls="solution">
+          Показать решение
+        </button>
+
+        <div class="task__sol" id="solution" hidden>
+          <ol class="steps">
+            <li><span class="steps__n">1</span>
+              <div>Замечаем, что 81 — это степень тройки:
+                <code>81 = 3<sup>4</sup></code></div></li>
+            <li><span class="steps__n">2</span>
+              <div>Основания слева и справа одинаковые, значит равны показатели:
+                <code>x − 5 = 4</code></div></li>
+            <li><span class="steps__n">3</span>
+              <div>Отсюда <code>x = 9</code></div></li>
+          </ol>
+          <p class="task__ans">Ответ: <b>9</b></p>
+          <p class="task__note">Весь фокус в первом шаге — увидеть одинаковое основание.
+            Этому учатся за одно занятие, и дальше вся тема перестаёт быть страшной.</p>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <h2 class="h2">Как проходят занятия</h2>
+      <div class="how__grid">
+        <article>
+          <h3>Сначала диагностика</h3>
+          <p>На первом занятии даю короткую работу и смотрю не оценку, а где именно рвётся:
+            часто «не понимаю производные» оказывается дробями за шестой класс.</p>
+        </article>
+        <article>
+          <h3>План до экзамена</h3>
+          <p>После диагностики присылаю список тем с датами. Вы видите, что мы успеваем,
+            а что придётся догонять летом.</p>
+        </article>
+        <article>
+          <h3>Занятие — 80 минут</h3>
+          <p>Разбор домашнего, новая тема, и обязательно решаем вместе, а не я у доски.
+            Ученик пишет сам с первой минуты.</p>
+        </article>
+        <article>
+          <h3>Отчёт родителям</h3>
+          <p>Раз в две недели пишу, что сделано и где провал. Без «всё хорошо» —
+            если ученик не работает, вы узнаете об этом сразу.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="price" id="price">
+    <div class="wrap">
+      <h2 class="h2">Цены</h2>
+      <p class="h2sub">Занятия по 80 минут. Оплата по факту, за неделю или за месяц — как удобно.</p>
+
+      <div class="plans">
+        <article class="plan">
+          <h3 class="plan__h">Индивидуально, онлайн</h3>
+          <p class="plan__p">1600&nbsp;₽<span>/занятие</span></p>
+          <ul class="plan__l">
+            <li>Zoom и общая онлайн-доска</li>
+            <li>Запись занятия остаётся ученику</li>
+            <li>Домашнее задание с проверкой</li>
+          </ul>
+        </article>
+
+        <article class="plan plan--main">
+          <h3 class="plan__h">Индивидуально, очно</h3>
+          <p class="plan__p">2000&nbsp;₽<span>/занятие</span></p>
+          <ul class="plan__l">
+            <li>У меня дома, район Автовокзала</li>
+            <li>Домашнее задание с проверкой</li>
+            <li>Разбор ошибок письменно</li>
+            <li>Связь в Telegram между занятиями</li>
+          </ul>
+          <p class="plan__tag">Чаще всего берут это</p>
+        </article>
+
+        <article class="plan">
+          <h3 class="plan__h">Пара учеников</h3>
+          <p class="plan__p">1200&nbsp;₽<span>/с человека</span></p>
+          <ul class="plan__l">
+            <li>Двое с похожим уровнем</li>
+            <li>Друг или одноклассник</li>
+            <li>Темп чуть медленнее</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results" id="results">
+    <div class="wrap">
+      <h2 class="h2 h2--light">Результаты</h2>
+      <p class="results__sub">Выпуск 2024 и 2025 годов, 34 ученика.</p>
+
+      <dl class="nums">
+        <div><dt>+31</dt><dd>средний прирост баллов за год подготовки</dd></div>
+        <div><dt>82</dt><dd>средний балл ЕГЭ профиль в прошлом году</dd></div>
+        <div><dt>4</dt><dd>ученика сдали на 90 и выше</dd></div>
+        <div><dt>0</dt><dd>не сдавших за всё время</dd></div>
+      </dl>
+
+      <blockquote class="quote">
+        <p>Пришли в октябре 11 класса с 38 баллами на пробнике, сдали на 76. Главное —
+          сын перестал считать, что он «неспособный к математике».</p>
+        <footer>Ирина, мама выпускника 2025 года</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about__in">
+      <div class="about__ph" role="img" aria-label="Фотография Анны Корниловой">
+        <span>фото</span>
+      </div>
+      <div>
+        <h2 class="h2">Обо мне</h2>
+        <p class="about__tx">Закончила мехмат УрФУ, восемь лет преподаю. Четыре года работала
+          в школе, потом ушла в репетиторство — в классе из тридцати человек невозможно
+          заметить, что конкретный ребёнок потерял нить две темы назад.</p>
+        <p class="about__tx">Каждый год сама пишу ЕГЭ вместе с учениками, чтобы понимать,
+          что реально меняется в заданиях, а не пересказывать прошлогодние методички.</p>
+
+        <dl class="about__list">
+          <div><dt>Образование</dt><dd>УрФУ, мехмат</dd></div>
+          <div><dt>Опыт</dt><dd>8 лет, из них 4 в школе</dd></div>
+          <div><dt>Классы</dt><dd>с 8 по 11</dd></div>
+          <div><dt>Свободные места</dt><dd>2 на эту неделю</dd></div>
+        </dl>
+
+        <div class="about__act">
+          <a class="btn btn--solid" href="https://t.me/anna_matematika">Написать в Telegram</a>
+          <a class="btn btn--line" href="tel:+79000000012">+7 900 000-00-12</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__nm">Анна Корнилова</p>
+    <p>Репетитор по математике, Екатеринбург ·
+      <a href="https://t.me/anna_matematika">@anna_matematika</a> ·
+      <a href="tel:+79000000012">+7 900 000-00-12</a></p>
+    <p class="foot__fine">Вымышленный специалист. Сайт сделан как работа в портфолио.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

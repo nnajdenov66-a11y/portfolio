@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пенка — кофейня на Гоголя, 9</title>
+<meta name="description" content="Кофейня «Пенка»: завтраки до полудня, обед, вечерние десерты. Гоголя, 9. Работаем с 8:00 до 23:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#menu">К меню</a>
+
+<header class="top">
+  <div class="top__in">
+    <a class="logo" href="#start">Пенка</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span><em class="vh">Меню</em>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#menu">Меню</a>
+      <a href="#beans">Зерно</a>
+      <a href="#place">Где мы</a>
+      <a class="nav__ph" href="tel:+73432000009">+7 343 200-00-09</a>
+    </nav>
+  </div>
+</header>
+
+<main id="start">
+
+  <section class="now">
+    <div class="wrap now__in">
+      <div class="now__left">
+        <p class="now__clock">
+          Сейчас <time id="clock">—:—</time> <span id="dayword">в Екатеринбурге</span>
+        </p>
+        <h1 class="now__head" id="nowHead">Доброе утро</h1>
+        <p class="now__say" id="nowSay">Загружаем часы…</p>
+
+        <div class="now__act">
+          <a class="btn btn--solid" href="#menu">Посмотреть меню</a>
+          <a class="btn btn--line" href="#place">Как дойти</a>
+        </div>
+      </div>
+
+      <aside class="cup" aria-hidden="true">
+        <svg viewBox="0 0 250 212" class="cup__svg">
+          <defs>
+            <clipPath id="cupInside">
+              <path d="M34 26 H186 L172 148 Q168 174 142 174 H78 Q52 174 48 148 Z"/>
+            </clipPath>
+          </defs>
+          <path d="M188 58 q40 8 33 42 q-7 32 -43 29" fill="none"
+                stroke="var(--espresso)" stroke-width="7" stroke-linecap="round"/>
+          <g clip-path="url(#cupInside)">
+            <rect x="0" y="20" width="250" height="40" fill="#FBF1E2"/>
+            <rect x="0" y="60" width="250" height="28" fill="#E7CBA6"/>
+            <rect x="0" y="88" width="250" height="120" fill="#5B3322"/>
+          </g>
+          <path d="M34 26 H186 L172 148 Q168 174 142 174 H78 Q52 174 48 148 Z"
+                fill="none" stroke="var(--espresso)" stroke-width="7" stroke-linejoin="round"/>
+          <rect x="22" y="188" width="196" height="9" rx="4.5" fill="var(--line)"/>
+        </svg>
+      </aside>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="menu__head">
+        <h2 class="h2">Меню</h2>
+        <div class="switch" role="tablist" aria-label="Время дня">
+          <button role="tab" id="tab-morning" aria-controls="p-morning" data-slot="morning">Завтраки</button>
+          <button role="tab" id="tab-day" aria-controls="p-day" data-slot="day">Днём</button>
+          <button role="tab" id="tab-evening" aria-controls="p-evening" data-slot="evening">Вечером</button>
+        </div>
+      </div>
+
+      <div class="menu__grid">
+        <div class="card">
+          <h3 class="card__h">Кофе</h3>
+          <p class="card__note">Весь день. На овсяном или безлактозном — без доплаты.</p>
+          <ul class="list">
+            <li><span>Эспрессо</span><i></i><b>120&nbsp;₽</b></li>
+            <li><span>Американо</span><i></i><b>150&nbsp;₽</b></li>
+            <li><span>Капучино</span><i></i><b>190&nbsp;₽</b></li>
+            <li><span>Флэт уайт</span><i></i><b>200&nbsp;₽</b></li>
+            <li><span>Латте</span><i></i><b>210&nbsp;₽</b></li>
+            <li><span>Раф на солёной карамели</span><i></i><b>240&nbsp;₽</b></li>
+            <li><span>Фильтр, зерно недели</span><i></i><b>180&nbsp;₽</b></li>
+            <li><span>Какао на молоке</span><i></i><b>190&nbsp;₽</b></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card__h" id="kitchenH">Кухня</h3>
+
+          <div class="pane" id="p-morning" role="tabpanel" aria-labelledby="tab-morning">
+            <p class="card__note">Готовим до 12:00, в выходные до 13:00.</p>
+            <ul class="list">
+              <li><span>Сырники со сметаной</span><i></i><b>320&nbsp;₽</b></li>
+              <li><span>Овсянка на банане</span><i></i><b>240&nbsp;₽</b></li>
+              <li><span>Яйца бенедикт</span><i></i><b>380&nbsp;₽</b></li>
+              <li><span>Авокадо-тост с яйцом</span><i></i><b>340&nbsp;₽</b></li>
+              <li><span>Круассан с миндалём</span><i></i><b>180&nbsp;₽</b></li>
+            </ul>
+          </div>
+
+          <div class="pane" id="p-day" role="tabpanel" aria-labelledby="tab-day" hidden>
+            <p class="card__note">С 12:00 до 18:00. Суп меняется каждый день.</p>
+            <ul class="list">
+              <li><span>Суп дня</span><i></i><b>290&nbsp;₽</b></li>
+              <li><span>Паста карбонара</span><i></i><b>420&nbsp;₽</b></li>
+              <li><span>Сэндвич с индейкой</span><i></i><b>350&nbsp;₽</b></li>
+              <li><span>Салат с киноа и свёклой</span><i></i><b>380&nbsp;₽</b></li>
+              <li><span>Тыквенный крем-суп</span><i></i><b>310&nbsp;₽</b></li>
+            </ul>
+          </div>
+
+          <div class="pane" id="p-evening" role="tabpanel" aria-labelledby="tab-evening" hidden>
+            <p class="card__note">С 18:00 до закрытия. Кухня работает до 22:30.</p>
+            <ul class="list">
+              <li><span>Чизкейк</span><i></i><b>280&nbsp;₽</b></li>
+              <li><span>Тирамису</span><i></i><b>300&nbsp;₽</b></li>
+              <li><span>Медовик</span><i></i><b>260&nbsp;₽</b></li>
+              <li><span>Какао с маршмеллоу</span><i></i><b>220&nbsp;₽</b></li>
+              <li><span>Чайник облепихи с имбирём</span><i></i><b>390&nbsp;₽</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="beans" id="beans">
+    <div class="wrap beans__in">
+      <div>
+        <h2 class="h2 h2--on-dark">Зерно недели</h2>
+        <p class="beans__lead">Берём у местной обжарки на Сибирском тракте, привозят раз
+          в неделю. Сейчас в фильтре — эфиопия, Иргачефф.</p>
+        <p class="beans__lead">Во вкусе чернослив, чёрный чай и немного цитруса в конце.
+          Пьётся без сахара и без молока — попробуйте так, прежде чем просить сироп.</p>
+      </div>
+
+      <div class="roast">
+        <p class="roast__cap">Обжарка — светлая</p>
+        <div class="roast__bar">
+          <span class="roast__step is-on"></span>
+          <span class="roast__step is-on"></span>
+          <span class="roast__step"></span>
+          <span class="roast__step"></span>
+          <span class="roast__step"></span>
+        </div>
+        <dl class="roast__facts">
+          <div><dt>Страна</dt><dd>Эфиопия</dd></div>
+          <div><dt>Регион</dt><dd>Иргачефф</dd></div>
+          <div><dt>Обработка</dt><dd>мытая</dd></div>
+          <div><dt>Пачка 250 г</dt><dd>890&nbsp;₽ с собой</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="place" id="place">
+    <div class="wrap place__in">
+      <div>
+        <h2 class="h2">Где мы</h2>
+        <p class="place__tx">Гоголя, 9 — первый этаж жилого дома, окна во двор, летом ставим
+          четыре столика на улицу. От метро «Площадь 1905 года» семь минут пешком.</p>
+        <dl class="place__list">
+          <div><dt>Часы</dt><dd>Каждый день, 8:00 — 23:00</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+73432000009">+7 343 200-00-09</a></dd></div>
+          <div><dt>Telegram</dt><dd><a href="https://t.me/penka_coffee">@penka_coffee</a></dd></div>
+          <div><dt>С собой</dt><dd>своя кружка — минус 30&nbsp;₽</dd></div>
+          <div><dt>Собаки</dt><dd>можно, миска у входа</dd></div>
+        </dl>
+      </div>
+
+      <div class="shots">
+        <figure class="shot"><span>зал у окна</span></figure>
+        <figure class="shot shot--tall"><span>стойка и кофемашина</span></figure>
+        <figure class="shot"><span>завтрак</span></figure>
+        <figure class="shot"><span>витрина с десертами</span></figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__logo">Пенка</p>
+    <p>Гоголя, 9 · <a href="tel:+73432000009">+7 343 200-00-09</a> · <a href="https://t.me/penka_coffee">@penka_coffee</a></p>
+    <p class="foot__fine">Вымышленная кофейня. Сайт сделан как работа в портфолио.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
